@@ -39,7 +39,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
               decoration: BoxDecoration(
                 color: AppTheme.card,
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: AppTheme.primary.withOpacity(0.35)),
+                border: Border.all(color: AppTheme.primary.withValues(alpha: 0.35)),
               ),
               child: Column(
                 children: [
@@ -109,7 +109,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
               child: ListTile(
                 leading: CircleAvatar(
-                  backgroundColor: AppTheme.primary.withOpacity(0.2),
+                  backgroundColor: AppTheme.primary.withValues(alpha: 0.2),
                   child: const Icon(Icons.stars_rounded, color: AppTheme.primary),
                 ),
                 title: const Text('Exclusive Partner Rewards', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
@@ -141,7 +141,7 @@ class _Tab1ScreenState extends State<Tab1Screen> {
                             Text('Cycle Milestone #$i', style: const TextStyle(color: AppTheme.textSecondary)),
                           ],
                         ),
-                        Text('+${i * 20 + t_idx * 10} pts', style: const TextStyle(color: AppTheme.primary, fontWeight: FontWeight.bold)),
+                        Text('+${i * 20 + 1 * 10} pts', style: const TextStyle(color: AppTheme.primary, fontWeight: FontWeight.bold)),
                       ],
                     ),
                     if (i < 3) const Divider(height: 16, color: Colors.white12),

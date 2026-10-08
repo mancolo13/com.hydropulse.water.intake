@@ -1,4 +1,4 @@
-package com.pulsefit.workout.hiit
+package com.hydropulse.water.intake
 
 import io.flutter.embedding.android.FlutterActivity
 

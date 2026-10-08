@@ -20,7 +20,7 @@ class AppTheme {
         ),
         navigationBarTheme: NavigationBarThemeData(
           backgroundColor: surface,
-          indicatorColor: primary.withOpacity(0.25),
+          indicatorColor: primary.withValues(alpha: 0.25),
           labelTextStyle: WidgetStateProperty.all(
             const TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: textSecondary),
           ),
